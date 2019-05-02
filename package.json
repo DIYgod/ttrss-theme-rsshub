@@ -1,0 +1,24 @@
+{
+  "name": "ttrss-theme-sagiri",
+  "version": "1.0.0",
+  "description": "As lovely as sagiri",
+  "main": "sagiri.css",
+  "scripts": {
+    "build": "NODE_ENV=production webpack --progress --display-error-details --colors"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.6.0",
+    "postcss-loader": "^3.0.0",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1",
+    "webpack-shell-plugin": "^0.5.0"
+  }
+}
