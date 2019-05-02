@@ -17,7 +17,23 @@ module.exports = {
                 test: /\.less$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    'css-loader?-url',
+                    {
+                        loader: 'string-replace-loader',
+                        options: {
+                            search: '../tt-rss',
+                            replace: '..',
+                            flags: 'g'
+                        }
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            url: false,
+                            import: (parsedImport) => {
+                                return parsedImport.url.includes('css');
+                            },
+                        }
+                    },
                     {
                         loader: 'postcss-loader',
                         options: {
@@ -30,17 +46,6 @@ module.exports = {
                     'less-loader'
                 ]
             },
-            // {
-            //     test: /\.(png|woff|woff2|eot|ttf|svg|gif)$/,
-            //     use: [
-            //         {
-            //             loader: 'url-loader',
-            //             options: {
-            //                 limit: 8192
-            //             }
-            //         }
-            //     ]
-            // }
         ]
     },
     plugins: [
