@@ -5,7 +5,7 @@ const WebpackShellPlugin = require('webpack-shell-plugin');
 module.exports = {
     mode: 'production',
     entry: {
-        sagiri: './src/sagiri.less'
+        rsshub: './src/rsshub.less'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -53,7 +53,7 @@ module.exports = {
             filename: '[name].css'
         }),
         new WebpackShellPlugin({
-            onBuildEnd: ['rm dist/sagiri.js']
+            onBuildEnd: ['rm dist/rsshub.js']
         })
     ]
 }

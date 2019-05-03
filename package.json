@@ -1,8 +1,8 @@
 {
-  "name": "ttrss-theme-sagiri",
+  "name": "ttrss-theme-rsshub",
   "version": "1.0.0",
-  "description": "As lovely as sagiri",
-  "main": "sagiri.css",
+  "description": "Lovely theme for Tiny Tiny RSS",
+  "main": "rsshub.css",
   "scripts": {
     "build": "NODE_ENV=production webpack --progress --display-error-details --colors"
   },
