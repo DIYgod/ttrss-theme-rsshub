@@ -4,11 +4,18 @@
 
 ## Screenshot
 
+![](https://i.loli.net/2019/05/03/5ccc5ab63bf77.jpg)
+![](https://i.loli.net/2019/05/03/5ccc5ab66fbf0.jpg)
+
 ## Usage
 
 ### Installation
 
-1. Download the CSS file into `themes.local` directory under tt-rss root: `wget https://raw.githubusercontent.com/DIYgod/ttrss-theme-rsshub/master/dist/rsshub.css`
+1. Download the CSS file into `themes.local` directory under tt-rss root
+
+```sh
+wget https://raw.githubusercontent.com/DIYgod/ttrss-theme-rsshub/master/dist/rsshub.css
+```
 
 1. Go into your tt-rss preferences and select the `rsshub.css` theme
 
