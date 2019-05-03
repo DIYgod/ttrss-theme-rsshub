@@ -4,8 +4,8 @@
 
 ## Screenshot
 
-![](https://i.loli.net/2019/05/03/5ccc5ab63bf77.jpg)
-![](https://i.loli.net/2019/05/03/5ccc5ab66fbf0.jpg)
+![](https://i.loli.net/2019/05/03/5ccc64b37e910.jpg)
+![](https://i.loli.net/2019/05/03/5ccc64b3ba567.jpg)
 
 ## Usage
 
