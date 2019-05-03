@@ -1,19 +1,27 @@
 body.ttrss_main {
     #main {
         #feeds-holder {
-            &::before {
-                content: 'Tiny Tiny RSS';
-                line-height: 74px;
-                padding-left: 26px;
-                border-right: 1px solid rgba(0, 0, 0, 0.07);
-                border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-                display: block;
-                font-weight: bold;
-                font-size: 22px;
-                color: @color-accent;
+            border-right: 1px solid rgba(0, 0, 0, 0.07);
+            
+            ::-webkit-scrollbar-thumb {
+                display: none;
+            }
+
+            ::-webkit-scrollbar {
+                display: none;
             }
 
             #feedTree {
+                &::before {
+                    content: 'Tiny Tiny RSS';
+                    line-height: 74px;
+                    padding-left: 26px;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+                    display: block;
+                    font-size: 22px;
+                    color: @color-accent;
+                }
+
                 .dijitTreeContainer {
                     padding: 10px 0;
                 }

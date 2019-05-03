@@ -1,6 +1,6 @@
 @import "../lib/flat-ttrss/flat_combined.css";
 html body.ttrss_main {
-  background-image: url("https://i.loli.net/2019/05/03/5ccc4fcd02385.jpg");
+  background-image: url("https://i.loli.net/2019/05/03/5ccc28e33fe7b.jpeg");
 }
 body.ttrss_main,
 body.ttrss_prefs,
@@ -2856,14 +2856,21 @@ body.ttrss_main #overlay #overlay_inner #loading_bar .dijitProgressBarTile {
 body.ttrss_main #overlay #overlay_inner #loading_bar .dijitProgressBarFull {
   background-color: transparent;
 }
-body.ttrss_main #main #feeds-holder::before {
+body.ttrss_main #main #feeds-holder {
+  border-right: 1px solid rgba(0, 0, 0, 0.07);
+}
+body.ttrss_main #main #feeds-holder ::-webkit-scrollbar-thumb {
+  display: none;
+}
+body.ttrss_main #main #feeds-holder ::-webkit-scrollbar {
+  display: none;
+}
+body.ttrss_main #main #feeds-holder #feedTree::before {
   content: 'Tiny Tiny RSS';
   line-height: 74px;
   padding-left: 26px;
-  border-right: 1px solid rgba(0, 0, 0, 0.07);
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
   display: block;
-  font-weight: bold;
   font-size: 22px;
   color: #f5712c;
 }
@@ -2960,86 +2967,86 @@ body.ttrss_main #main #content-wrap .cdm .collapse i {
   background: #FFD6A6;
   color: #f5712c;
 }
-body.ttrss_main #main .dijitTabListWrapper,
-body.ttrss_main #main .dijitAccordionTitle,
-body.ttrss_main #main .dijitToolbar .dijitDropDownButton .dijitButtonNode,
-body.ttrss_main #main .arrowTextUp,
-body.ttrss_main #main .arrowTextDown {
+body.ttrss_prefs #main .dijitTabListWrapper,
+body.ttrss_prefs #main .dijitAccordionTitle,
+body.ttrss_prefs #main .dijitToolbar .dijitDropDownButton .dijitButtonNode,
+body.ttrss_prefs #main .arrowTextUp,
+body.ttrss_prefs #main .arrowTextDown {
   line-height: 30px;
 }
-body.ttrss_main #main .dijitAccordionInnerContainer,
-body.ttrss_main #main .dijitAccordionTitle,
-body.ttrss_main #main .dijitAccordionContainer {
+body.ttrss_prefs #main .dijitAccordionInnerContainer,
+body.ttrss_prefs #main .dijitAccordionTitle,
+body.ttrss_prefs #main .dijitAccordionContainer {
   border-radius: 0;
 }
-body.ttrss_main #main .dijitAccordionTitle {
+body.ttrss_prefs #main .dijitAccordionTitle {
   padding: 4px 10px;
 }
-body.ttrss_main #main .dijitToolbar {
+body.ttrss_prefs #main .dijitToolbar {
   padding: 0 10px;
 }
-body.ttrss_main #main .dijitTree {
+body.ttrss_prefs #main .dijitTree {
   padding: 10px;
 }
-body.ttrss_main #main .dijitTreeRowSelected {
+body.ttrss_prefs #main .dijitTreeRowSelected {
   background: none;
   color: #f5712c;
 }
-body.ttrss_main #main .dijitAccordionInnerContainerSelected .dijitAccordionTitle {
+body.ttrss_prefs #main .dijitAccordionInnerContainerSelected .dijitAccordionTitle {
   background: #f5712c;
 }
-body.ttrss_main #main .dijitButton.alt-info .dijitButtonNode,
-body.ttrss_main #main .dijitDropDownButton.alt-info .dijitButtonNode,
-body.ttrss_main #main .dijitComboButton.alt-info .dijitButtonNode,
-body.ttrss_main #main .dijitToggleButton.alt-info .dijitButtonNode,
-body.ttrss_main #main .dijitComboBox.alt-info .dijitButtonNode,
-body.ttrss_main #main .dijitSelect.alt-info .dijitButtonContents,
-body.ttrss_main #main .dijitSelect.alt-info .dijitButtonNode,
-body.ttrss_main #main .dijitSpinner.alt-info .dijitArrowButton {
-  background: #f5712c;
-  border: none;
-}
-body.ttrss_main #main .dijitButton.alt-primary .dijitButtonNode,
-body.ttrss_main #main .dijitDropDownButton.alt-primary .dijitButtonNode,
-body.ttrss_main #main .dijitComboButton.alt-primary .dijitButtonNode,
-body.ttrss_main #main .dijitToggleButton.alt-primary .dijitButtonNode,
-body.ttrss_main #main .dijitComboBox.alt-primary .dijitButtonNode,
-body.ttrss_main #main .dijitSelect.alt-primary .dijitButtonContents,
-body.ttrss_main #main .dijitSelect.alt-primary .dijitButtonNode,
-body.ttrss_main #main .dijitSpinner.alt-primary .dijitArrowButton {
+body.ttrss_prefs #main .dijitButton.alt-info .dijitButtonNode,
+body.ttrss_prefs #main .dijitDropDownButton.alt-info .dijitButtonNode,
+body.ttrss_prefs #main .dijitComboButton.alt-info .dijitButtonNode,
+body.ttrss_prefs #main .dijitToggleButton.alt-info .dijitButtonNode,
+body.ttrss_prefs #main .dijitComboBox.alt-info .dijitButtonNode,
+body.ttrss_prefs #main .dijitSelect.alt-info .dijitButtonContents,
+body.ttrss_prefs #main .dijitSelect.alt-info .dijitButtonNode,
+body.ttrss_prefs #main .dijitSpinner.alt-info .dijitArrowButton {
   background: #f5712c;
   border: none;
 }
-body.ttrss_main #main .dijitTextBoxFocused,
-body.ttrss_main #main .dijitTextBoxHover {
+body.ttrss_prefs #main .dijitButton.alt-primary .dijitButtonNode,
+body.ttrss_prefs #main .dijitDropDownButton.alt-primary .dijitButtonNode,
+body.ttrss_prefs #main .dijitComboButton.alt-primary .dijitButtonNode,
+body.ttrss_prefs #main .dijitToggleButton.alt-primary .dijitButtonNode,
+body.ttrss_prefs #main .dijitComboBox.alt-primary .dijitButtonNode,
+body.ttrss_prefs #main .dijitSelect.alt-primary .dijitButtonContents,
+body.ttrss_prefs #main .dijitSelect.alt-primary .dijitButtonNode,
+body.ttrss_prefs #main .dijitSpinner.alt-primary .dijitArrowButton {
+  background: #f5712c;
+  border: none;
+}
+body.ttrss_prefs #main .dijitTextBoxFocused,
+body.ttrss_prefs #main .dijitTextBoxHover {
   border-color: #f5712c;
 }
-body.ttrss_main #main .dijitTabContainerTop-tabs .dijitTabChecked {
+body.ttrss_prefs #main .dijitTabContainerTop-tabs .dijitTabChecked {
   color: #f5712c;
   font-weight: bold;
 }
-body.ttrss_main #main .dijitTabContainerTop-tabs .dijitTabChecked:before {
+body.ttrss_prefs #main .dijitTabContainerTop-tabs .dijitTabChecked:before {
   background: #f5712c;
 }
-body.ttrss_main #main .dijitTabListContainer-top {
+body.ttrss_prefs #main .dijitTabListContainer-top {
   background: #fff;
   margin-top: 10px;
   border-radius: 5px 5px 0 0;
 }
-body.ttrss_main #main .dijitTab {
+body.ttrss_prefs #main .dijitTab {
   background: #fff;
   border: none;
 }
-body.ttrss_main #main .dijitTabPaneWrapper {
+body.ttrss_prefs #main .dijitTabPaneWrapper {
   padding: 20px 0px 0px;
   border: none;
   border-radius: 0 0 5px 5px;
   overflow: hidden;
 }
-body.ttrss_main #main .dijitTabContainerTop-dijitContentPane {
+body.ttrss_prefs #main .dijitTabContainerTop-dijitContentPane {
   padding: 0;
 }
-body.ttrss_main #main .dijitAccordionContainer-dijitContentPane {
+body.ttrss_prefs #main .dijitAccordionContainer-dijitContentPane {
   padding: 8px 20px;
 }
 
