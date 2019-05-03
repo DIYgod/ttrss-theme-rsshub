@@ -1,6 +1,6 @@
 # ttrss-theme-rsshub
 
-> Lovely theme for [Tiny Tiny RSS](https://tt-rss.org/)
+> 🍰 Lovely theme for [Tiny Tiny RSS](https://tt-rss.org/)
 
 ## Screenshot
 
@@ -17,7 +17,7 @@
 wget https://raw.githubusercontent.com/DIYgod/ttrss-theme-rsshub/master/dist/rsshub.css
 ```
 
-1. Go into your tt-rss preferences and select the `rsshub.css` theme
+2. Go into your tt-rss preferences and select the `rsshub.css` theme
 
 ### Custom background
 
