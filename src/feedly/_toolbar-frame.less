@@ -1,0 +1,97 @@
+@import "_variables.less";
+
+#toolbar-frame#toolbar-frame {
+  z-index: 3;
+
+  #toolbar,
+  .dijitSelect:not(.dijitHover),
+  .dijitToolbar .dijitSelect:not(.dijitHover) .dijitButtonContents,
+  .dijitToolbar .dijitSelect:not(.dijitHover) .dijitButtonNode {
+    background-color: transparent;
+  }
+
+  #toolbar {
+    padding: 6px 0;
+    color: @faded-text;
+
+    .icon-syndicate {
+      border: none;
+      color: @default-text;
+    }
+    #toolbar-headlines .left,
+    > .material-icons {
+      position: relative;
+      top: -2px;
+      padding-left: 1px;
+    }
+    > .material-icons {
+      left: 4px;
+      padding-right: 4px; // same as .updates-available for each icon
+    }
+    #feed_title {
+      color: @default-text;
+      font-size: 14px;
+      font-weight: bold;
+
+      > * {
+        vertical-align: middle;
+      }
+    }
+    #cancel_search {
+      padding-left: 10px;
+      color: transparent;
+      font-size: 12px;
+      font-weight: normal;
+      vertical-align: baseline;
+    }
+    #selected_prompt {
+      font-style: normal;
+    }
+    > .dijitButton {
+      .dijitButtonNode {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: @feeds-toggle-width;
+        padding: 0;
+        transition: background-position 0.1s;
+        border: 0;
+        border-radius: 0;
+        background: linear-gradient(to right, @color-fade2, @color-fade0) -30px 0
+          no-repeat;
+        box-shadow: none;
+      }
+      .dijitButtonContents {
+        position: absolute;
+        top: 37px + @headline-height / 2;
+        left: 50%;
+        width: 16px;
+        height: 16px;
+        margin-left: -8px;
+        padding: 0;
+        overflow: hidden;
+        transition: opacity 0.2s;
+        opacity: 0.22;
+        text-indent: 101%;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          height: 3px;
+          background-color: @default-fg;
+          box-shadow: 0 6px 0 @default-fg, 0 12px 0 @default-fg;
+        }
+      }
+      &:hover .dijitButtonNode {
+        background-position: 0 0;
+      }
+      &:hover .dijitButtonContents {
+        opacity: 0.75;
+      }
+    }
+  }
+}

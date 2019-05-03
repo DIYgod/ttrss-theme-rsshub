@@ -1,0 +1,92 @@
+body.ttrss_main {
+    #main {
+        #content-wrap {
+            #toolbar-frame {
+                #toolbar-headlines {
+                    .left {
+                        position: static;
+                    }
+                }
+            }
+
+            .cdm {
+                cursor: default;
+
+                &:first-child {
+                    border-top: none;
+                }
+
+                &.expanded,
+                &.active {
+                    border-left: none;
+                    border-right: none;
+                    
+                    .feed {
+                        left: 0;
+                    }
+
+                    .right {
+                        display: none;
+                    }
+                }
+
+                .titleWrap,
+                .excerpt,
+                .header,
+                .updated {
+                    display: block;
+                }
+        
+                &:hover {
+                    .updated {
+                        display: block !important;
+                    }
+        
+                    & > * {
+                        background-color: transparent !important;
+                    }
+                }
+
+                .titleWrap {
+                    cursor: pointer;
+                }
+        
+                .title {
+                    font-size: 17px;
+                    margin-bottom: 10px;
+                    display: inline-block;
+                }
+
+                .excerpt {
+                    font-size: 14px;
+                    white-space: normal;
+                }
+
+                .feed {
+                    position: relative;
+                    left: 30px;
+                    max-width: none;
+                    margin-top: 10px;
+
+                    a {
+                        padding: 1px 10px;
+                    }
+                }
+
+                .right {
+                    position: absolute;
+                    bottom: 44px;
+                }
+
+                .updated {
+                    margin: 5px 0 20px 5px;
+                }
+
+                .collapse i {
+                    background: #FFD6A6;
+                    color: #f5712c;
+                }
+            }
+        }
+    }
+}

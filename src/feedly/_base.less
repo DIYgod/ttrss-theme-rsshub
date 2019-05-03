@@ -1,0 +1,49 @@
+// based on https://github.com/levito/tt-rss-feedly-theme
+
+@import "_variables.less";
+@import "_feeds-holder.less";
+@import "_toolbar-frame.less";
+@import "_content-wrap.less";
+@import "_content.less";
+@import "_overlay.less";
+
+::-webkit-scrollbar {
+  height: 4px;
+}
+
+.dijitOffScreen {
+  left: -101vw !important;
+}
+
+body.ttrss_main {
+  background-color: @default-bg;
+  color: @default-text;
+
+  .dijitSplitter {
+    background-color: transparent;
+  }
+
+  .dijitSplitterThumb {
+    display: none;
+  }
+
+  #main {
+    background-color: @border-default !important;
+  }
+
+  &:not(.ttrss_prefs) #main {
+    padding-left: @feeds-toggle-width;
+  }
+
+  .dijitDialogUnderlay {
+    opacity: 0.4;
+  }
+
+  span.highlight {
+    margin: -0.1em -0.2em;
+    padding: 0.1em 0.2em;
+    border-radius: 0.2em;
+    background-color: rgba(255, 192, 0, 0.5);
+    color: @faded-text;
+  }
+}

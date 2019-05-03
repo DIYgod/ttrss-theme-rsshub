@@ -1,0 +1,85 @@
+body.ttrss_main {
+    #main {
+        .dijitTabListWrapper,
+        .dijitAccordionTitle,
+        .dijitToolbar .dijitDropDownButton .dijitButtonNode,
+        .arrowTextUp,
+        .arrowTextDown {
+            line-height: 30px;
+        }
+
+        .dijitAccordionInnerContainer,
+        .dijitAccordionTitle,
+        .dijitAccordionContainer {
+            border-radius: 0;
+        }
+
+        .dijitAccordionTitle {
+            padding: 4px 10px;
+        }
+
+        .dijitToolbar {
+            padding: 0 10px;
+        }
+
+        .dijitTree {
+            padding: 10px;
+        }
+
+        .dijitTreeRowSelected {
+            background: none;
+            color: @color-accent;
+        }
+
+        .dijitAccordionInnerContainerSelected .dijitAccordionTitle {
+            background: @color-accent;
+        }
+
+        .dijitButton.alt-info .dijitButtonNode, .dijitDropDownButton.alt-info .dijitButtonNode, .dijitComboButton.alt-info .dijitButtonNode, .dijitToggleButton.alt-info .dijitButtonNode, .dijitComboBox.alt-info .dijitButtonNode, .dijitSelect.alt-info .dijitButtonContents, .dijitSelect.alt-info .dijitButtonNode, .dijitSpinner.alt-info .dijitArrowButton {
+            background: @color-accent;
+            border: none;
+        }
+
+        .dijitButton.alt-primary .dijitButtonNode, .dijitDropDownButton.alt-primary .dijitButtonNode, .dijitComboButton.alt-primary .dijitButtonNode, .dijitToggleButton.alt-primary .dijitButtonNode, .dijitComboBox.alt-primary .dijitButtonNode, .dijitSelect.alt-primary .dijitButtonContents, .dijitSelect.alt-primary .dijitButtonNode, .dijitSpinner.alt-primary .dijitArrowButton {
+            background: @color-accent;
+            border: none;
+        }
+
+        .dijitTextBoxFocused,
+        .dijitTextBoxHover {
+            border-color: @color-accent;
+        }
+
+        .dijitTabContainerTop-tabs .dijitTabChecked {
+            color: @color-accent;
+            font-weight: bold;
+
+            &:before {
+                background: @color-accent;
+            }
+        }
+
+        .dijitTabListContainer-top {
+            background: #fff;
+            margin-top: @container-margin;
+        }
+
+        .dijitTab {
+            background: #fff;
+            border: none;
+        }
+
+        .dijitTabPaneWrapper {
+            padding: 20px 0px 0px;
+            border: none;
+        }
+
+        .dijitTabContainerTop-dijitContentPane {
+            padding: 0;
+        }
+
+        .dijitAccordionContainer-dijitContentPane {
+            padding: 8px 20px;
+        }
+    }
+}

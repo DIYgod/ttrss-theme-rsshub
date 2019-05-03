@@ -1,0 +1,57 @@
+body.ttrss_main {
+    #main {
+        #feeds-holder {
+            &::before {
+                content: 'Tiny Tiny RSS';
+                line-height: 74px;
+                padding-left: 26px;
+                border-right: 1px solid rgba(0, 0, 0, 0.07);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+                display: block;
+                font-weight: bold;
+                font-size: 22px;
+                color: @color-accent;
+            }
+
+            #feedTree {
+                .dijitTreeContainer {
+                    padding: 10px 0;
+                }
+
+                .dijitTreeRow {
+                    &:hover {
+                        background: none !important;
+                        color: @color-accent;
+                        box-shadow: none;
+                    }
+        
+                    &[style="padding-left: 19px;"] {
+                        padding-left: 10px !important;
+                    }
+        
+                    &.dijitTreeRowSelected {
+                        background: none !important;
+                        color: @color-accent;
+                        box-shadow: none;
+                        font-weight: bold !important;
+        
+                        .dijitTreeLabel {
+                            &.Unread {
+                                font-weight: bold !important;
+                            }
+                        }
+                    }
+        
+                    .dijitTreeLabel {
+                        font-size: 14px;
+                        line-height: 28px;
+        
+                        &.Unread {
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

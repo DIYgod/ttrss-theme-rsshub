@@ -1,0 +1,114 @@
+@import "_variables.less";
+
+#feeds-holder#feeds-holder {
+  overflow: visible;
+  background-color: transparent;
+  box-shadow: none;
+
+  #feedTree {
+    margin-left: -@feeds-toggle-width;
+    font-size: 12px;
+
+    .dijitTreeContainer {
+      padding: (30px + @headline-height / 2) 0;
+    }
+
+    .dijitTreeRow {
+      padding-right: @feeds-spacing;
+      transition: none;
+      border: 0 solid transparent;
+      border-left-width: @feeds-spacing;
+      color: @default-feeds-text;
+
+      &,
+      * {
+        cursor: pointer;
+      }
+      &:hover {
+        background-color: @color-fade1;
+      }
+      &.dijitTreeRowSelected {
+        background-color: @color-fade2;
+      }
+    }
+
+    .counterNode {
+      border-color: transparent;
+      background-color: transparent;
+      color: @default-feeds-text;
+      font-weight: normal;
+      text-align: right;
+
+      &.aux {
+        color: @faded-feeds-text;
+      }
+    }
+
+    .dijitTreeIcon,
+    .dijitTreeExpando,
+    .dijitTreeLabel {
+      margin-left: 8px;
+    }
+
+    .dijitTreeIcon {
+      line-height: 0;
+    }
+
+    .dijitTreeExpando {
+      top: -1px;
+      left: -1px;
+
+      &::before {
+        font-family: "Material Icons";
+        font-size: 20px;
+      }
+    }
+    .dijitTreeExpandoClosed::before {
+      content: "\e315";
+    }
+    .dijitTreeExpandoOpened::before {
+      content: "\e313";
+    }
+
+    .icon.material-icons:not(.icon-label),
+    .dijitTreeExpando {
+      transition: color 0.2s;
+      color: @color-fade4;
+    }
+
+    .icon.material-icons {
+      top: 0;
+      left: 0;
+      font-size: 18px;
+    }
+
+    .dijitTreeExpando:hover {
+      color: @color-fade6;
+    }
+
+    .dijitTreeContent::before {
+      content: "";
+      margin-left: -0.3em;
+    }
+
+    .dijitTreeExpandoLeaf {
+      top: 2px;
+      float: right;
+    }
+
+    .dijitTreeRow[style="padding-left: 19px;"] {
+      padding-left: 26px !important;
+    }
+
+    > .dijitTreeContainer
+      > .dijitTreeNode
+      > .dijitTreeNodeContainer
+      > .dijitTreeNode:first-child {
+      margin-bottom: 28px;
+
+      > .dijitTreeNodeContainer .dijitTreeRow {
+        padding-left: 0 !important;
+      }
+    }
+  }
+}

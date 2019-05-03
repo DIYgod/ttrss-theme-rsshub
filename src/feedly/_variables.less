@@ -1,0 +1,47 @@
+@default-fg: #000;
+@default-bg: #fff;
+@color-published: #e84;
+@color-marked: #6b5;
+@color-checked: #db0;
+
+@color-fade0: fade(@default-fg, 0%);
+@color-fade1: fade(@default-fg, 4%);
+@color-fade2: fade(@default-fg, 7%);
+@color-fade3: fade(@default-fg, 15%);
+@color-fade4: fade(@default-fg, 22%);
+@color-fade5: fade(@default-fg, 30%);
+@color-fade6: fade(@default-fg, 45%);
+@color-fade7: fade(@default-fg, 60%);
+@color-fade8: fade(@default-fg, 75%);
+
+@color-panel-bg: @color-fade1;
+@border-default: @color-fade2;
+@faded-feeds-text: @color-fade5;
+@faded-text: @color-fade6;
+@color-icon: @color-fade6;
+@default-feeds-text: @color-fade7;
+@default-text: @color-fade8;
+
+@fonts-ui: "Helvetica Neue", Arial, Helvetica, "Liberation Sans",
+  "Nimbus Sans L", FreeSans, sans-serif;
+@fonts-ui-bold: @fonts-ui;
+@fonts-heading: SansCn;
+@fonts-content: @fonts-ui;
+@fonts-mono: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono",
+  "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+
+@font-size-content: 14px;
+
+@base-spacing: 30px;
+@feeds-toggle-width: @base-spacing;
+@feeds-spacing: @base-spacing - 10px;
+@headline-height: @base-spacing;
+@content-spacing-right: @base-spacing + 4px;
+@content-spacing-left: @base-spacing - 4px;
+
+.heading-font-size(@level: 0) {
+  @font-size: @font-size-content + 10 - 2 * @level;
+
+  font-size: @font-size;
+  line-height: @font-size + 6px;
+}

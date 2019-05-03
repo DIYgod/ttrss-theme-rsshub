@@ -1,0 +1,118 @@
+@container-width: 1110px;
+@sider-width: 300px;
+@container-margin: 10px;
+@color-accent: #f5712c;
+@color-secondary: #FFD6A6;
+@color-checked: @color-accent;
+
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: @color-secondary;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+body.ttrss_main {
+    background-image: url("https://i.loli.net/2019/05/03/5ccc28e33fe7b.jpeg");
+    background-color: #efefef;
+    background-size: cover;
+    font-family: "PingFang SC", "Microsoft YaHei", Lato, sans-serif !important;
+    overflow: scroll;
+
+    #main {
+        width: @container-width;
+        margin: 0 auto;
+        position: relative;
+        background: none !important;
+        display: flex;
+
+        #feeds-holder_splitter {
+            pointer-events: none;
+            position: static !important;
+            width: 0;
+        }
+
+        #feeds-holder {
+            width: @sider-width !important;
+            position: static !important;
+            margin: @container-margin 0px;
+            border-radius: 5px 0 0 5px;
+            overflow: hidden;
+            background: #fff;
+
+            #feedTree {
+                background: #fff;
+                width: @sider-width;
+                margin: 0;
+            }
+        }
+
+        #content-wrap {
+            flex: 1;
+            position: relative !important;
+            left: 0 !important;
+            margin: @container-margin 0px;
+            border-radius: 0 5px 5px 0;
+            overflow: hidden;
+
+            #toolbar-frame,
+            #headlines-wrap-inner,
+            #headlines-frame {
+                width: 100% !important;
+            }
+
+            #headlines-frame {
+                box-sizing: border-box;
+                height: 100% !important;
+                padding-top: 0;
+            }
+
+            #headlines-spacer::after {
+                background: none !important;
+            }
+        }
+    }
+
+    .dijitMenuItemSelected td {
+        background-color: @color-accent;
+    }
+
+    .dijitMenuItemDisabled.dijitMenuItemSelected {
+        background: transparent;
+        
+        td {
+            background: transparent;
+            color: @color-accent;
+        }
+    }
+
+    .dijitDisabled.dijitMenuItemSelected {
+        background: transparent;
+        
+        td {
+            background: transparent;
+            color: @color-accent;
+        }
+    }
+
+    #overlay {
+        overflow: hidden;
+
+        #overlay_inner {
+            color: @color-accent;
+    
+            #loading_bar {
+                .dijitProgressBarTile{
+                    background: @color-secondary;
+                    height: 3px;
+                }
+    
+                .dijitProgressBarFull {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
