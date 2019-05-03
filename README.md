@@ -19,10 +19,6 @@ wget https://raw.githubusercontent.com/DIYgod/ttrss-theme-rsshub/master/dist/rss
 
 2. Go into your tt-rss preferences and select the `rsshub.css` theme
 
-### Custom background
-
-Edit [the third line of rsshub.css](https://github.com/DIYgod/ttrss-theme-rsshub/blob/master/dist/rsshub.css#L3)
-
 ## Author
 
 **ttrss-theme-rsshub** © [DIYgod](https://github.com/DIYgod), Released under the [MIT](./LICENSE) License.<br>
