@@ -4,7 +4,7 @@
   "description": "Lovely theme for Tiny Tiny RSS",
   "main": "rsshub.css",
   "scripts": {
-    "build": "NODE_ENV=production webpack --progress --display-error-details --colors"
+    "build": "NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=production webpack --progress --display-error-details --colors"
   },
   "dependencies": {},
   "devDependencies": {
@@ -20,5 +20,34 @@
     "webpack-cli": "^3.3.1",
     "webpack-dev-server": "^3.3.1",
     "webpack-shell-plugin": "^0.5.0"
+  },
+  "resolutions": {
+    "array-flatten": "npm:@nolyfill/array-flatten@^1",
+    "assert": "npm:@nolyfill/assert@^1",
+    "available-typed-arrays": "npm:@nolyfill/available-typed-arrays@^1",
+    "deep-equal": "npm:@nolyfill/deep-equal@^1",
+    "define-properties": "npm:@nolyfill/define-properties@^1",
+    "function-bind": "npm:@nolyfill/function-bind@^1",
+    "gopd": "npm:@nolyfill/gopd@^1",
+    "has-property-descriptors": "npm:@nolyfill/has-property-descriptors@^1",
+    "has-symbols": "npm:@nolyfill/has-symbols@^1",
+    "has-tostringtag": "npm:@nolyfill/has-tostringtag@^1",
+    "hasown": "npm:@nolyfill/hasown@^1",
+    "is-arguments": "npm:@nolyfill/is-arguments@^1",
+    "is-date-object": "npm:@nolyfill/is-date-object@^1",
+    "is-regex": "npm:@nolyfill/is-regex@^1",
+    "is-typed-array": "npm:@nolyfill/is-typed-array@^1",
+    "isarray": "npm:@nolyfill/isarray@^1",
+    "object-is": "npm:@nolyfill/object-is@^1",
+    "object-keys": "npm:@nolyfill/object-keys@^1",
+    "object.assign": "npm:@nolyfill/object.assign@^1",
+    "regexp.prototype.flags": "npm:@nolyfill/regexp.prototype.flags@^1",
+    "safe-buffer": "npm:@nolyfill/safe-buffer@^1",
+    "safer-buffer": "npm:@nolyfill/safer-buffer@^1",
+    "set-function-length": "npm:@nolyfill/set-function-length@^1",
+    "side-channel": "npm:@nolyfill/side-channel@^1",
+    "typed-array-buffer": "npm:@nolyfill/typed-array-buffer@^1",
+    "typedarray": "npm:@nolyfill/typedarray@^1",
+    "which-typed-array": "npm:@nolyfill/which-typed-array@^1"
   }
 }

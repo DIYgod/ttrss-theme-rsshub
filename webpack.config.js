@@ -20,7 +20,7 @@ module.exports = {
                     {
                         loader: 'string-replace-loader',
                         options: {
-                            search: '../tt-rss',
+                            search: '\\.\\./tt-rss(/themes)?',
                             replace: '..',
                             flags: 'g'
                         }
